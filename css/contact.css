@@ -28,6 +28,7 @@ img {
   background-color: #f0f5f5;
   background-repeat: no-repeat;
   height: 35em;
+  background-position: center;
 }
 
 @media screen and (min-width: 700px) {
@@ -39,7 +40,7 @@ img {
 
 .header_logo {
   border-radius: 50%;
-  margin-top: 1em;
+  margin-top: 0em;
 }
 
 .navbar {
@@ -74,11 +75,42 @@ img {
 @media screen and (min-width: 700px) {
   .navbar ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     text-decoration-style: solid;
     font-size: 24px;
     gap: 2em;
   }
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #552c00;
+  font-size: 50px;
+  font-weight: 1250;
+  margin-top: 0em;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    max-width: 10ch;
+    overflow-wrap: hyphenate-word;
+    hyphens: auto;
+    margin: 0em;
+  }
+}
+
+h2 {
+  color: var(--clr-accent);
+  font-size: 42px;
+}
+
+p {
+  color: #303030;
+  font-size: 17px;
+  margin: 2em;
 }
 
 .flex_container {
@@ -86,4 +118,74 @@ img {
   gap: 1em;
   grid-template-columns: 50% 50%;
   display: grid;
+  justify-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .project1 {
+    margin: 2em;
+    max-width: 50ch;
+    padding-bottom: 2em;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .project2 {
+    margin: 2em;
+    max-width: 50ch;
+    box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 2em;
+    justify-content: space-around;
+  }
+}
+
+.kontaktinfo {
+  text-align: center;
+}
+
+footer {
+  margin-top: 0;
+  height: 300px;
+}
+
+h3 {
+  color: #f0f5f5;
+}
+
+.h3_wrapper {
+  max-width: 30em;
+}
+
+.top_footer {
+  background-color: var(--clr-accent-dark);
+  height: 80%;
+  padding-top: 2em;
+  margin-bottom: 0;
+  font-size: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.bottom_footer {
+  background-color: var(--clr-accent);
+  height: 100%;
+  margin-top: 0;
+  padding-bottom: 2em;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.footer_logo {
+  border-radius: 50%;
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 700px) {
+  .top_footer,
+  .bottom_footer {
+    margin: 0.5em;
+    max-width: 500ch;
+    box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
+  }
 }
