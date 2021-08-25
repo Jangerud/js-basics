@@ -122,6 +122,66 @@ p {
 }
 
 @media screen and (min-width: 700px) {
+  .flex_container {
+    justify-content: space-around;
+  }
+}
+
+.väderapp {
+  background-image: url("../images/Beach.jpg");
+}
+
+@media screen and (min-width: 700px) {
+  .väderapp {
+    margin: 2em;
+    max-width: 50ch;
+    box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 2em;
+    justify-content: space-around;
+  }
+}
+
+.btn {
+  justify-self: center;
+  cursor: pointer;
+  color: var(--clr-secondary);
+  text-decoration: none;
+  background-color: var(--clr-primary);
+  padding: 0.5em 1em;
+  border-radius: 1.5em;
+  font-weight: bold;
+  width: 25%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 2em;
+  margin-top: 10em;
+}
+
+.btn--grader {
+  border: 2px solid;
+  color: var(--clr-primary);
+  background-color: var(--clr-accent);
+}
+
+@media screen and (min-width: 600px) {
+  .btns {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 700px) {
   .project1 {
     margin: 2em;
     max-width: 50ch;
@@ -130,14 +190,16 @@ p {
   }
 }
 
-@media screen and (min-width: 700px) {
-  .project2 {
-    margin: 2em;
-    max-width: 50ch;
-    box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
-    padding-bottom: 2em;
-    justify-content: space-around;
-  }
+.blur {
+  background: rgba(255, 255, 255, 0.425);
+  backdrop-filter: blur(15px);
+  width: 100%;
+}
+
+.box {
+  justify-content: center;
+  margin-bottom: 12em;
+  margin-top: 1em;
 }
 
 .kontaktinfo {
