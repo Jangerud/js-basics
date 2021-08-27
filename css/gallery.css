@@ -105,10 +105,10 @@ h2 {
 
 @media screen and (max-width: 400px) {
   h2 {
-    display: flex;
     max-width: 10ch;
     overflow-wrap: hyphenate-word;
     hyphens: auto;
+    font-size: auto;
   }
 }
 
@@ -118,9 +118,8 @@ p {
 }
 
 .flex_container {
-  padding: 0 2em 2em;
   gap: 1em;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: auto;
   display: grid;
   justify-items: center;
   margin: 5em;
@@ -128,18 +127,43 @@ p {
 
 @media screen and (min-width: 700px) {
   .flex_container {
-    justify-content: space-around;
+    padding: 0 2em 2em;
+    gap: 1em;
+    grid-template-columns: 50% 50%;
+    display: grid;
+    justify-items: center;
+    margin: 5em;
   }
+}
+
+.project1 {
+  max-width: 50%;
+  grid-template-columns: 50% 50%;
+  margin: 2em;
+  max-width: 50ch;
+  box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 2em;
+  justify-self: center;
+}
+
+.project2 {
+  max-width: 50%;
+  grid-template-columns: 50% 50%;
+  margin: 2em;
+  max-width: 50ch;
+  box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 2em;
+  justify-self: center;
 }
 
 @media screen and (min-width: 700px) {
   .project1,
   .project2 {
+    grid-template-columns: 50% 50%;
     margin: 2em;
     max-width: 50ch;
     box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
     padding-bottom: 2em;
-    justify-content: space-around;
   }
 }
 

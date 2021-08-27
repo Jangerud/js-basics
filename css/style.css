@@ -107,6 +107,15 @@ h2 {
   font-size: 42px;
 }
 
+@media screen and (max-width: 400px) {
+  h2 {
+    max-width: 10ch;
+    overflow-wrap: hyphenate-word;
+    hyphens: auto;
+    margin: 0em auto;
+  }
+}
+
 p {
   color: #303030;
   font-size: 17px;
@@ -114,35 +123,35 @@ p {
 }
 
 .flex_container {
-  padding: 0em 2em 2em;
   gap: 1em;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: auto;
   display: grid;
-  justify-items: center;
 }
 
 @media screen and (min-width: 700px) {
   .flex_container {
-    margin: 5em;
     box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
+    gap: 1em;
+    grid-template-columns: 50% 50%;
+    display: grid;
+    justify-items: center;
   }
 }
 
 .services {
-  object-position: left;
-  grid-column: 1;
-  align-self: left;
+  align-self: center;
 }
 
 .carpenter_wrapper {
   object-position: right;
-  grid-column: 2;
+  grid-column: auto;
+  align-self: right;
 }
 
 @media screen and (min-width: 700px) {
   .carpenter_wrapper {
     margin: 5em;
-    max-width: 50ch;
+    max-width: 50%;
     box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
     padding-bottom: 0em;
   }
@@ -150,36 +159,30 @@ p {
 
 .workspace_wrapper {
   object-position: left;
-  grid-column: 1;
-}
-
-.workspace {
   height: auto;
   object-fit: contain;
+  box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 700px) {
   .workspace_wrapper {
     margin: 5em;
-
+    grid-column: 1;
+    max-width: 50ch;
     box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
   }
 }
 
 .workareas {
-  object-position: right;
-  max-width: 50ch;
-  grid-column: 2;
-}
-
-.services,
-.workareas {
-  margin: 5em;
+  grid-column: auto;
+  align-self: center;
 }
 
 @media screen and (min-width: 700px) {
   .services,
   .workareas {
+    max-width: 50ch;
+    grid-column: auto;
     margin: 5em;
     box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, 0.2);
     padding-bottom: 1em;
