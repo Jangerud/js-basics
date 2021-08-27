@@ -6,3 +6,6 @@ Det jag gillade med firefox inspect var att man på ett enkelt sätt kan se vad 
 Skillnaden mellan att felsöka i chrome i jämförelse med firefox är just inspect valmöjligheten i firefox, och att den känns mer anpassad för just detta.
 Men för mig i detta skede som nybörjare så känns en kombination fortfarande optimalt då man börjar utanför firefox och sen kommer till det när sidan tagit form.
 
+
+MITT GIT REPO: https://github.com/Jangerud/js-basics
+
